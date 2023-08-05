@@ -6,9 +6,9 @@ import { MainApp } from './Page/MainApp.jsx'
 import './styles/styles.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  
+
   <BrowserRouter>
-       <MainApp/>
+    <MainApp />
   </BrowserRouter>
-  
+
 )

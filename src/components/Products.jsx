@@ -7,23 +7,24 @@ export function Products({ products }) {
                 {products.map(product => (
 
                     <li className='m-5' key={product.id}>
-                        <div className='bg-blue-300 '>
-                            <img
-                                src={product.img}
-                                alt={product.nombre}
-                            />
-                        </div>
-                        <div className='flex flex-col'>
-                            <strong>{product.nombre}</strong>
-                            <span>$ {product.precio}</span>
-                        </div>
-                        <div>
-                            <div>
-                                <button className="bg-black text-white p-3 rounded-md">
-                                    <span class="flex px-2 text-center material-symbols-outlined">
-                                        add_shopping_cart
-                                    </span>
-                                </button>
+
+
+                        {/* Componente */}
+
+                        <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+                            <a href="#">
+                                <img className="p-8 rounded-t-lg" src={product.img} alt={product.nombre} />
+                            </a>
+                            <div className="px-5 pb-5">
+                                <a href="#">
+                                    <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">{product.nombre}</h5>
+                                </a>
+                                <div className="flex items-center mt-2.5 mb-5">
+                                </div>
+                                <div className="flex items-center justify-between">
+                                    <span className="text-3xl font-bold text-gray-900 dark:text-white">${product.precio}</span>
+                                    <a href="#" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add to cart</a>
+                                </div>
                             </div>
                         </div>
 
@@ -31,6 +32,16 @@ export function Products({ products }) {
                     </li>
                 ))}
             </ul>
+
+            <br />
+
+
+
+
+
+
         </main>
+
+
     )
 }

@@ -8,7 +8,7 @@ export const NavBar = () => {
     <div className='bg-black p-11 flex justify-between gap-12 items-center'>
 
       <div className='text-3xl font-extrabold'>
-        <h1 className='ml-9 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 animate-jump-in'>Tiendita BETA!</h1>
+        <h1 className='ml-9 bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 animate-jump-in'>ApiAmigas</h1>
       </div>
 
       <nav className='font-bold flex gap-10 text-violet-400 text'>
