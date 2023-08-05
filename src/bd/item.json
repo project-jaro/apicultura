@@ -1,0 +1,68 @@
+{
+    "productos": [
+      {
+        "id": 1,
+        "nombre": "Camiseta",
+        "img": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2023/06/14/16867313137408.jpg",
+        "descripcion": "Una camiseta de algodón suave y cómoda",
+        "precio": 80000,
+        "disponible": true,
+        "categoria": "Ropa"
+      },
+      {
+        "id": 2,
+        "nombre": "Zapatos deportivos",
+        "descripcion": "Zapatos deportivos ligeros y duraderos",
+        "img": "https://i.pinimg.com/originals/55/2c/75/552c75a0c361e570975d8502923eacfc.jpg",
+        "precio": 45000,
+        "disponible": true,
+        "categoria": "Calzado"
+      },
+      {
+        "id": 3,
+        "nombre": "Bolso",
+        "descripcion": "Bolso de cuero sintético con múltiples compartimentos",
+        "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d46c8969b9e642a19965af330104708c_9366/Bolso_Deportivo_Negro_HT2447_01_standard.jpg",
+        "precio": 20000,
+        "disponible": false,
+        "categoria": "Accesorios"
+      },
+      {
+        "id": 4,
+        "nombre": "Reloj",
+        "descripcion": "Reloj analógico resistente al agua",
+        "img": "https://play-lh.googleusercontent.com/ELeNOuPeMYNGtONxLp1KtOh1FyWB_HCWZtWiOLAYCIYI-1eKfDwee2rG9XZASs3yjEA",
+        "precio": 120000,
+        "disponible": true,
+        "categoria": "Accesorios"
+      },
+      {
+        "id": 5,
+        "nombre": "Gafas de sol",
+        "descripcion": "Gafas de sol con protección UV",
+        "img": "https://gmo.cl/media/catalog/product/cache/845e081c010715fcb30f158862918c8e/8/0/805289391616_1.jpg",
+        "precio": 35000,
+        "disponible": true,
+        "categoria": "Accesorios"
+      },
+      {
+        "id": 6,
+        "nombre": "Pantalones vaqueros",
+        "descripcion": "Pantalones vaqueros de corte ajustado",
+        "img": "https://rac.cl/cdn/shop/products/107-220_695x695.jpg?v=1618626160",
+        "precio": 65000,
+        "disponible": true,
+        "categoria": "Ropa"
+      },
+      {
+        "id": 7,
+        "nombre": "Mochila",
+        "descripcion": "Mochila resistente al agua con múltiples compartimentos",
+        "img": "https://fjallraven.cl/cdn/shop/products/kanken_23510-221_a_main_fjr_3_680x.jpg?v=1681835721",
+        "precio": 55000,
+        "disponible": true,
+        "categoria": "Accesorios"
+      }
+    ]
+  }
+  
