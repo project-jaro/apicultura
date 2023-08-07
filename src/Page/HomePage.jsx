@@ -36,27 +36,18 @@ export const HomePage = () => {
 
   return (
 
-    <>
-      {/* <h1>
-        Hello world!
-        {user.name}
-
-      </h1>
-
-      <pre>
-          { JSON.stringify(user,null,3) }
-      </pre> */}
+    <main>
       <HeaderProducts changeFilters={setFilters} />
       <Products products={filteredProducts} />
 
       <div className="p-10">
-        <button className="absolute bg-violet-200 p-5 rounded-full items-center justify-center">
+        <button className="bg-violet-200 p-5 rounded-full items-center justify-center">
           <span className="flex material-symbols-rounded text-violet-500">
             shopping_cart
           </span>
         </button>
       </div>
-    </>
+    </main>
 
   )
 }

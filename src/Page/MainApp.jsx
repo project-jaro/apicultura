@@ -11,9 +11,8 @@ export const MainApp = () => {
   return (
     
     <UserProvider>
+      
         <NavBar/>
-        <hr />
-        
         <Routes>
           <Route path="/" element={<HomePage/>} />
           <Route path="login" element={<LoginPage/>} />
