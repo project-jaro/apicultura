@@ -5,13 +5,13 @@ export function Products({ products }) {
         <div className="flex items-center justify-center m-2">
             <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center animate-fade-up mt-11">
                 {products.map(product => (
-
+                    
                     <li className='m-5' key={product.id}>
                         {/* Componente */}
 
                         <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                             <a href="#">
-                                <img className="p-8 rounded-t-lg" src={product.img} alt={product.nombre} />
+                                <img className="p-8 w-72 rounded-t-lg" src={product.img} alt={product.nombre} />
                             </a>
                             <div className="px-5 pb-5">
                                 <a href="#">

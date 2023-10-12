@@ -1,68 +1,1359 @@
 {
-    "productos": [
-      {
-        "id": 1,
-        "nombre": "Camiseta",
-        "img": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2023/06/14/16867313137408.jpg",
-        "descripcion": "Una camiseta de algodón suave y cómoda",
-        "precio": 80000,
-        "disponible": true,
-        "categoria": "Ropa"
-      },
-      {
-        "id": 2,
-        "nombre": "Zapatos deportivos",
-        "descripcion": "Zapatos deportivos ligeros y duraderos",
-        "img": "https://i.pinimg.com/originals/55/2c/75/552c75a0c361e570975d8502923eacfc.jpg",
-        "precio": 45000,
-        "disponible": true,
-        "categoria": "Calzado"
-      },
-      {
-        "id": 3,
-        "nombre": "Bolso",
-        "descripcion": "Bolso de cuero sintético con múltiples compartimentos",
-        "img": "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/d46c8969b9e642a19965af330104708c_9366/Bolso_Deportivo_Negro_HT2447_01_standard.jpg",
-        "precio": 20000,
-        "disponible": false,
-        "categoria": "Accesorios"
-      },
-      {
-        "id": 4,
-        "nombre": "Reloj",
-        "descripcion": "Reloj analógico resistente al agua",
-        "img": "https://play-lh.googleusercontent.com/ELeNOuPeMYNGtONxLp1KtOh1FyWB_HCWZtWiOLAYCIYI-1eKfDwee2rG9XZASs3yjEA",
-        "precio": 120000,
-        "disponible": true,
-        "categoria": "Accesorios"
-      },
-      {
-        "id": 5,
-        "nombre": "Gafas de sol",
-        "descripcion": "Gafas de sol con protección UV",
-        "img": "https://gmo.cl/media/catalog/product/cache/845e081c010715fcb30f158862918c8e/8/0/805289391616_1.jpg",
-        "precio": 35000,
-        "disponible": true,
-        "categoria": "Accesorios"
-      },
-      {
-        "id": 6,
-        "nombre": "Pantalones vaqueros",
-        "descripcion": "Pantalones vaqueros de corte ajustado",
-        "img": "https://rac.cl/cdn/shop/products/107-220_695x695.jpg?v=1618626160",
-        "precio": 65000,
-        "disponible": true,
-        "categoria": "Ropa"
-      },
-      {
-        "id": 7,
-        "nombre": "Mochila",
-        "descripcion": "Mochila resistente al agua con múltiples compartimentos",
-        "img": "https://fjallraven.cl/cdn/shop/products/kanken_23510-221_a_main_fjr_3_680x.jpg?v=1681835721",
-        "precio": 55000,
-        "disponible": true,
-        "categoria": "Accesorios"
-      }
-    ]
-  }
-  
+  "productos": [
+    {
+      "id": 1,
+      "categoría": "accesorios",
+      "nombre": "atrapa enjambres imp.",
+      "código": "5655",
+      "precio": "19.900",
+      "img": "./src/img/Productos/AcidoAcetico.jpg"
+    },
+    {
+      "id": 2,
+      "categoría": "artículos de laboratorio",
+      "nombre": "alcohol desnaturalizado 1 litro",
+      "código": "4769",
+      "precio": "4.950",
+      "img": "./src/img/Productos/ACIDO OXALICO 1 KILO.png"
+    },
+    {
+      "id": 3,
+      "categoría": "control de plagas",
+      "nombre": "vespugard 1,5 dp 11 gr",
+      "código": "an1503113",
+      "precio": "14.990",
+      "img": "./src/img/Productos/AGUJA CHINA MADERA.png"
+    },
+    {
+      "id": 4,
+      "categoría": "envases",
+      "nombre": "balde plástico c/tapa blanco 25 kg.",
+      "código": "5271",
+      "precio": "5.900"
+    },
+    {
+      "id": 5,
+      "categoría": "envases",
+      "nombre": "balde plástico c/tapa blanco 5 kg.",
+      "código": "5273",
+      "precio": "2.800",
+      "img": "./img/Productos/balde 5 kilos.jpg"
+    },
+    {
+      "id": 6,
+      "categoría": "envases",
+      "nombre": "envase kraft c/tapa polipapel 1 kilo",
+      "código": "5260",
+      "precio": "350"
+    },
+    {
+      "id": 7,
+      "categoría": "envases",
+      "nombre": "envase octogonal 1 kilo 40 unidades",
+      "código": "5241",
+      "precio": "21.990"
+    },
+    {
+      "id": 8,
+      "categoría": "envases",
+      "nombre": "envase octogonal 1/2 kilo 75 unidades",
+      "código": "5242",
+      "precio": "35.990"
+    },
+    {
+      "id": 9,
+      "categoría": "envases",
+      "nombre": "frasco 25 ml pet ámbar con gotario",
+      "código": "5005",
+      "precio": "0"
+    },
+    {
+      "id": 10,
+      "categoría": "envases",
+      "nombre": "frasco 30 ml spray ámbar",
+      "código": "5000",
+      "precio": "350"
+    },
+    {
+      "id": 11,
+      "categoría": "envases",
+      "nombre": "frasco panal 250 grs tapa metálica 53 mm x42",
+      "código": "5259x42",
+      "precio": "24.360"
+    },
+    {
+      "id": 12,
+      "categoría": "envases",
+      "nombre": "frasco vidrio 180 grs 36 unidades",
+      "código": "5254",
+      "precio": "17.280"
+    },
+    {
+      "id": 13,
+      "categoría": "envases",
+      "nombre": "frasco vidrio hexagonal 220 grs. c/tapa dorada 30 unds.",
+      "código": "5251x30",
+      "precio": "18.900"
+    },
+    {
+      "id": 14,
+      "categoría": "envases",
+      "nombre": "tambor mielero 200 lts reacondicionado",
+      "código": "5280",
+      "precio": "42.990"
+    },
+    {
+      "id": 15,
+      "categoría": "envases y tapas importados",
+      "nombre": "frasco vidrio cuadrado con tapa metálica 1 kg caja 45 un.",
+      "código": "5300x45",
+      "precio": "44.550"
+    },
+    {
+      "id": 16,
+      "categoría": "etiquetas",
+      "nombre": "etiqueta sello 4,1x14,5 cm pasieka abeja con flor blanca 100 un.",
+      "código": "pba202",
+      "precio": "5.990"
+    },
+    {
+      "id": 17,
+      "categoría": "etiquetas",
+      "nombre": "etiqueta sello 4,1x14,5 cm pasieka abeja con flor roja 100 un.",
+      "código": "pba207",
+      "precio": "5.990"
+    },
+    {
+      "id": 18,
+      "categoría": "etiquetas",
+      "nombre": "etiqueta sello 4,1x14,5 cm pasieka abeja con flor rosada 100 un.",
+      "código": "pba205",
+      "precio": "5.990"
+    },
+    {
+      "id": 19,
+      "categoría": "etiquetas",
+      "nombre": "etiqueta sello 4,1x14,5 cm pasieka abejas en panal 100 un.",
+      "código": "pba204",
+      "precio": "5.990"
+    },
+    {
+      "id": 20,
+      "categoría": "etiquetas",
+      "nombre": "etiqueta sello 4,1x14,5 cm pasieka apicultor con marco 100 un.",
+      "código": "pba210",
+      "precio": "5.990"
+    },
+    {
+      "id": 21,
+      "categoría": "herramientas e insumos",
+      "nombre": "ahumador tipo americano fuelle cuero imp.",
+      "código": "2017",
+      "precio": "16.900"
+    },
+    {
+      "id": 22,
+      "categoría": "herramientas e insumos",
+      "nombre": "ahumador tipo americano grande imp.",
+      "código": "2011",
+      "precio": "18.900"
+    },
+    {
+      "id": 23,
+      "categoría": "herramientas e insumos",
+      "nombre": "ahumador tipo europeo fuelle silicona quarti",
+      "código": "2020",
+      "precio": "49.990"
+    },
+    {
+      "id": 24,
+      "categoría": "herramientas e insumos",
+      "nombre": "alambrador de marcos",
+      "código": "2430",
+      "precio": "17.000"
+    },
+    {
+      "id": 25,
+      "categoría": "herramientas e insumos",
+      "nombre": "alambre 0,55 mm 2,2 kg",
+      "código": "2422",
+      "precio": "12.500"
+    },
+    {
+      "id": 26,
+      "categoría": "herramientas e insumos",
+      "nombre": "alzamarcos con palanca ac. inox plano",
+      "código": "2153",
+      "precio": "8.500"
+    },
+    {
+      "id": 27,
+      "categoría": "herramientas e insumos",
+      "nombre": "colador 1 tamiz 24 cm imp.",
+      "código": "2750",
+      "precio": "19.900"
+    },
+    {
+      "id": 28,
+      "categoría": "herramientas e insumos",
+      "nombre": "colador 1 tamiz 36 cm imp.",
+      "código": "2751",
+      "precio": "26.900"
+    },
+    {
+      "id": 29,
+      "categoría": "herramientas e insumos",
+      "nombre": "cuchillo desoperculador duo ancho mango madera",
+      "código": "2555",
+      "precio": "6.900"
+    },
+    {
+      "id": 30,
+      "categoría": "herramientas e insumos",
+      "nombre": "cuchillo desoperculador duo madera ms",
+      "código": "2553",
+      "precio": "4.200"
+    },
+    {
+      "id": 31,
+      "categoría": "herramientas e insumos",
+      "nombre": "cuchillo desoperculador eléctrico agro",
+      "código": "2572",
+      "precio": "79.900"
+    },
+    {
+      "id": 32,
+      "categoría": "herramientas e insumos",
+      "nombre": "cuchillo desoperculador liso 28 cm. imp.",
+      "código": "2550",
+      "precio": "7.990"
+    },
+    {
+      "id": 33,
+      "categoría": "herramientas e insumos",
+      "nombre": "cuchillo desoperculador sierra 28 cm. imp.",
+      "código": "2560",
+      "precio": "7.990"
+    },
+    {
+      "id": 34,
+      "categoría": "herramientas e insumos",
+      "nombre": "escobilla básica cerda plástica imp",
+      "código": "2201",
+      "precio": "3.000"
+    },
+    {
+      "id": 35,
+      "categoría": "herramientas e insumos",
+      "nombre": "escobilla cerda natural imp",
+      "código": "2250",
+      "precio": "5.950"
+    },
+    {
+      "id": 36,
+      "categoría": "herramientas e insumos",
+      "nombre": "filtro nylon 32 cm. cónico fino imp.",
+      "código": "2720",
+      "precio": "10.900"
+    },
+    {
+      "id": 37,
+      "categoría": "herramientas e insumos",
+      "nombre": "filtro nylon 45 cm. cónico ultra fino imp.",
+      "código": "2726",
+      "precio": "12.900"
+    },
+    {
+      "id": 38,
+      "categoría": "herramientas e insumos",
+      "nombre": "fuelle de repuesto cuero imp.",
+      "código": "2018",
+      "precio": "10.990"
+    },
+    {
+      "id": 39,
+      "categoría": "herramientas e insumos",
+      "nombre": "fuelle de repuesto para ahumador quarti",
+      "código": "2029",
+      "precio": "12.990"
+    },
+    {
+      "id": 40,
+      "categoría": "herramientas e insumos",
+      "nombre": "incrustador de cera box eléctrico imp.",
+      "código": "2450",
+      "precio": "38.950"
+    },
+    {
+      "id": 41,
+      "categoría": "herramientas e insumos",
+      "nombre": "incrustador de cera box eléctrico quarti",
+      "código": "2451",
+      "precio": "69.500"
+    },
+    {
+      "id": 42,
+      "categoría": "herramientas e insumos",
+      "nombre": "incrustador de cera eléctrico 2 imp.",
+      "código": "2452",
+      "precio": "28.900"
+    },
+    {
+      "id": 43,
+      "categoría": "herramientas e insumos",
+      "nombre": "ojetillos imp. bolsa 1.000 un.",
+      "código": "2406x1",
+      "precio": "6.990"
+    },
+    {
+      "id": 44,
+      "categoría": "herramientas e insumos",
+      "nombre": "ojetillos imp. bolsa 10.000 un.",
+      "código": "2406x10",
+      "precio": "56.990"
+    },
+    {
+      "id": 45,
+      "categoría": "herramientas e insumos",
+      "nombre": "palanca chica imp.",
+      "código": "2113",
+      "precio": "3.650"
+    },
+    {
+      "id": 46,
+      "categoría": "herramientas e insumos",
+      "nombre": "palanca con raspador agro",
+      "código": "2140",
+      "precio": "3.800"
+    },
+    {
+      "id": 47,
+      "categoría": "herramientas e insumos",
+      "nombre": "palanca con raspador azul ac. inox. mann lake",
+      "código": "2131",
+      "precio": "19.990"
+    },
+    {
+      "id": 48,
+      "categoría": "herramientas e insumos",
+      "nombre": "palanca con raspador imp.",
+      "código": "2110",
+      "precio": "3.800"
+    },
+    {
+      "id": 49,
+      "categoría": "herramientas e insumos",
+      "nombre": "palanca hand",
+      "código": "2148",
+      "precio": "6.300"
+    },
+    {
+      "id": 50,
+      "categoría": "herramientas e insumos",
+      "nombre": "palanca multifuncional agro",
+      "código": "2118",
+      "precio": "5.200"
+    },
+    {
+      "id": 51,
+      "categoría": "herramientas e insumos",
+      "nombre": "rastrillo desoperculador base metalica c/rasp.imp.",
+      "código": "2502",
+      "precio": "7.500"
+    },
+    {
+      "id": 52,
+      "categoría": "herramientas e insumos",
+      "nombre": "rastrillo desoperculador nuevo modelo lyson",
+      "código": "2510",
+      "precio": "23.990"
+    },
+    {
+      "id": 53,
+      "categoría": "herramientas e insumos",
+      "nombre": "reestirador de alambre mango madera",
+      "código": "2465",
+      "precio": "12.500"
+    },
+    {
+      "id": 54,
+      "categoría": "implementos crianza de reinas",
+      "nombre": "aguja de traslarve china madera",
+      "código": "4000",
+      "precio": "1.000"
+    },
+    {
+      "id": 55,
+      "categoría": "implementos crianza de reinas",
+      "nombre": "aguja de traslarve china plastica",
+      "código": "4001",
+      "precio": "1.000"
+    },
+    {
+      "id": 56,
+      "categoría": "implementos crianza de reinas",
+      "nombre": "aguja de traslarve tipo alemana ms",
+      "código": "4013",
+      "precio": "3.900"
+    },
+    {
+      "id": 57,
+      "categoría": "implementos crianza de reinas",
+      "nombre": "barra porta cupulas plastica jzbz",
+      "código": "4195",
+      "precio": "4.200"
+    },
+    {
+      "id": 58,
+      "categoría": "implementos crianza de reinas",
+      "nombre": "barra porta jaula reinas jzbz larga",
+      "código": "4395",
+      "precio": "4.200"
+    },
+    {
+      "id": 59,
+      "categoría": "implementos crianza de reinas",
+      "nombre": "cupula con base jzbz ambar x 1000 un.",
+      "código": "4123a",
+      "precio": "220.000"
+    },
+    {
+      "id": 60,
+      "categoría": "implementos crianza de reinas",
+      "nombre": "cupula con base jzbz smoke x 1000 un.",
+      "código": "4123s",
+      "precio": "220.000"
+    },
+    {
+      "id": 61,
+      "categoría": "implementos crianza de reinas",
+      "nombre": "cupula sin base imp. x 1.000 un.",
+      "código": "4110m",
+      "precio": "14.900"
+    },
+    {
+      "id": 62,
+      "categoría": "implementos crianza de reinas",
+      "nombre": "cupula sin base imp. x 100 un.",
+      "código": "4110c",
+      "precio": "2.200"
+    },
+    {
+      "id": 63,
+      "categoría": "implementos crianza de reinas",
+      "nombre": "cupula sin base plana jzbz x 1000 un.",
+      "código": "4133",
+      "precio": "130.000"
+    },
+    {
+      "id": 64,
+      "categoría": "implementos crianza de reinas",
+      "nombre": "jaula reina plastica jzbz",
+      "código": "4300",
+      "precio": "420"
+    },
+    {
+      "id": 65,
+      "categoría": "implementos crianza de reinas",
+      "nombre": "jaula reina plastica jzbz bolsa 100 un.",
+      "código": "4302",
+      "precio": "39.000"
+    },
+    {
+      "id": 66,
+      "categoría": "implementos crianza de reinas",
+      "nombre": "jaula reina plastica jzbz caja 1.000 un.",
+      "código": "4303",
+      "precio": "350.000"
+    },
+    {
+      "id": 67,
+      "categoría": "implementos crianza de reinas",
+      "nombre": "marcador de reinas esmalte con pincel amarillo",
+      "código": "4467y",
+      "precio": "4.500"
+    },
+    {
+      "id": 68,
+      "categoría": "implementos crianza de reinas",
+      "nombre": "marcador de reinas esmalte con pincel azul",
+      "código": "4467b",
+      "precio": "4.500"
+    },
+    {
+      "id": 69,
+      "categoría": "implementos crianza de reinas",
+      "nombre": "marcador de reinas esmalte con pincel rojo",
+      "código": "4467r",
+      "precio": "4.500"
+    },
+    {
+      "id": 70,
+      "categoría": "implementos crianza de reinas",
+      "nombre": "marcador de reinas esmalte con pincel verde",
+      "código": "4467g",
+      "precio": "4.500"
+    },
+    {
+      "id": 71,
+      "categoría": "implementos crianza de reinas",
+      "nombre": "marcador de reinas posca verde",
+      "código": "4460g",
+      "precio": "5.500"
+    },
+    {
+      "id": 72,
+      "categoría": "implementos crianza de reinas",
+      "nombre": "protector celda real largo jzbz x 1000 un.",
+      "código": "4203",
+      "precio": "0"
+    },
+    {
+      "id": 73,
+      "categoría": "implementos crianza de reinas",
+      "nombre": "protector ondulin completo imp.",
+      "código": "4229",
+      "precio": "690"
+    },
+    {
+      "id": 74,
+      "categoría": "implementos crianza de reinas",
+      "nombre": "sujetador reina clip ac. inox.",
+      "código": "4412",
+      "precio": "2.500"
+    },
+    {
+      "id": 75,
+      "categoría": "implementos crianza de reinas",
+      "nombre": "sujetador reina clip plastico imp.",
+      "código": "4410",
+      "precio": "690"
+    },
+    {
+      "id": 76,
+      "categoría": "implementos crianza de reinas",
+      "nombre": "sujetador reina rejilla con tubo imp.",
+      "código": "4407",
+      "precio": "2.600"
+    },
+    {
+      "id": 77,
+      "categoría": "maquinarias",
+      "nombre": "balde receptor de miel graduado plastico quarti",
+      "código": "3321",
+      "precio": "29.990"
+    },
+    {
+      "id": 78,
+      "categoría": "maquinarias",
+      "nombre": "banda fundidora de miel para tambor 300 kg",
+      "código": "3410",
+      "precio": "220.000"
+    },
+    {
+      "id": 79,
+      "categoría": "maquinarias",
+      "nombre": "bandeja para alzas ac.inox. 45x52 con carro plastico quarti",
+      "código": "3813",
+      "precio": "149.990"
+    },
+    {
+      "id": 80,
+      "categoría": "maquinarias",
+      "nombre": "batea desoperculadora 1 mt. con tapa quarti",
+      "código": "3020",
+      "precio": "773.500"
+    },
+    {
+      "id": 81,
+      "categoría": "maquinarias",
+      "nombre": "batea desoperculadora 1,5 mts. ac.inox. lyson ultra",
+      "código": "3040ul",
+      "precio": "916.300"
+    },
+    {
+      "id": 82,
+      "categoría": "maquinarias",
+      "nombre": "batea desoperculadora 2 metros a. inox. sin filtro obs",
+      "código": "3010",
+      "precio": "952.000"
+    },
+    {
+      "id": 83,
+      "categoría": "maquinarias",
+      "nombre": "batea desoperculadora 2 mts. ultra lyson",
+      "código": "3041ul",
+      "precio": "1.035.000"
+    },
+    {
+      "id": 84,
+      "categoría": "maquinarias",
+      "nombre": "carro porta alza lyson",
+      "código": "3811",
+      "precio": "464.100"
+    },
+    {
+      "id": 85,
+      "categoría": "maquinarias",
+      "nombre": "carro porta tambor manual con rueda soporte lyson",
+      "código": "3823",
+      "precio": "690.200"
+    },
+    {
+      "id": 86,
+      "categoría": "maquinarias",
+      "nombre": "centrífuga 12 marcos manual ac.inox. quarti",
+      "código": "3222",
+      "precio": "868.700"
+    },
+    {
+      "id": 87,
+      "categoría": "maquinarias",
+      "nombre": "centrífuga 15 marcos con motor ac.inox. quarti",
+      "código": "3225",
+      "precio": "2.261.000"
+    },
+    {
+      "id": 88,
+      "categoría": "maquinarias",
+      "nombre": "centrífuga 18 marcos full automática línea clásica lyson",
+      "código": "3142",
+      "precio": "2.975.000"
+    },
+    {
+      "id": 89,
+      "categoría": "maquinarias",
+      "nombre": "centrífuga 3 marcos manual ac.inox. obs",
+      "código": "3210",
+      "precio": "499.800"
+    },
+    {
+      "id": 90,
+      "categoría": "maquinarias",
+      "nombre": "centrífuga 4 marcos manual ac.inox. quarti",
+      "código": "3220",
+      "precio": "654.500"
+    },
+    {
+      "id": 91,
+      "categoría": "maquinarias",
+      "nombre": "centrífuga 4 marcos minima lyson",
+      "código": "3265b",
+      "precio": "654.500"
+    },
+    {
+      "id": 92,
+      "categoría": "maquinarias",
+      "nombre": "centrífuga 6 marcos tangencial a. inox. manual obs",
+      "código": "3211",
+      "precio": "731.850"
+    },
+    {
+      "id": 93,
+      "categoría": "maquinarias",
+      "nombre": "centrífuga 8 marcos 12v/230v lyson",
+      "código": "3266",
+      "precio": "1.428.000"
+    },
+    {
+      "id": 94,
+      "categoría": "maquinarias",
+      "nombre": "estanque decantador 100 kg. ac.inox. quarti",
+      "código": "3521",
+      "precio": "303.450"
+    },
+    {
+      "id": 95,
+      "categoría": "maquinarias",
+      "nombre": "estanque decantador 100 kg. con filtro y base lyson",
+      "código": "3511",
+      "precio": "499.800"
+    },
+    {
+      "id": 96,
+      "categoría": "maquinarias",
+      "nombre": "estanque decantador 200 kg (con filtro y con base) lyson",
+      "código": "3512",
+      "precio": "523.000"
+    },
+    {
+      "id": 97,
+      "categoría": "maquinarias",
+      "nombre": "estanque decantador 200 kg. ac.inox. quarti",
+      "código": "3522",
+      "precio": "392.700"
+    },
+    {
+      "id": 98,
+      "categoría": "maquinarias",
+      "nombre": "estanque decantador 40 kg (con filtro y con base) lyson",
+      "código": "3515",
+      "precio": "440.300"
+    },
+    {
+      "id": 99,
+      "categoría": "maquinarias",
+      "nombre": "estanque decantador 50 kg. ac.inox. quarti",
+      "código": "3520",
+      "precio": "249.900"
+    },
+    {
+      "id": 100,
+      "categoría": "maquinarias",
+      "nombre": "estanque decantador 50 kilos tipo alemán obs",
+      "código": "3500",
+      "precio": "249.900"
+    },
+    {
+      "id": 101,
+      "categoría": "maquinarias",
+      "nombre": "fundidor de cera 10 marcos aislado lyson",
+      "código": "3748",
+      "precio": "1.309.000"
+    },
+    {
+      "id": 102,
+      "categoría": "maquinarias",
+      "nombre": "fundidor de miel ac.inox. 23 cm. quarti",
+      "código": "3423",
+      "precio": "690.200"
+    },
+    {
+      "id": 103,
+      "categoría": "maquinarias",
+      "nombre": "fundidor de miel ac.inox. 53 cm. quarti",
+      "código": "3425",
+      "precio": "883.000"
+    },
+    {
+      "id": 104,
+      "categoría": "materiales de la colmena",
+      "nombre": "alimentador plástico de piquera imp.",
+      "código": "0512",
+      "precio": "500"
+    },
+    {
+      "id": 105,
+      "categoría": "materiales de la colmena",
+      "nombre": "alimentador plásticos c/ flotador",
+      "código": "0510",
+      "precio": "2.790"
+    },
+    {
+      "id": 106,
+      "categoría": "materiales de la colmena",
+      "nombre": "cámara de cría sin marcos natural premium",
+      "código": "0202p",
+      "precio": "45.790"
+    },
+    {
+      "id": 107,
+      "categoría": "materiales de la colmena",
+      "nombre": "cera estampada de abejas 1 kg",
+      "código": "0280",
+      "precio": "12.200"
+    },
+    {
+      "id": 108,
+      "categoría": "materiales de la colmena",
+      "nombre": "conector colmena simple ac.inox imp. x un.",
+      "código": "0910",
+      "precio": "660"
+    },
+    {
+      "id": 109,
+      "categoría": "materiales de la colmena",
+      "nombre": "cuerpo o anillo natural premium",
+      "código": "0220p",
+      "precio": "12.990"
+    },
+    {
+      "id": 110,
+      "categoría": "materiales de la colmena",
+      "nombre": "entretapa natural premium",
+      "código": "0230p",
+      "precio": "5.500"
+    },
+    {
+      "id": 111,
+      "categoría": "materiales de la colmena",
+      "nombre": "escape plástico 8 salidas redondo importado",
+      "código": "0766",
+      "precio": "1.200"
+    },
+    {
+      "id": 112,
+      "categoría": "materiales de la colmena",
+      "nombre": "flotador plástico para alimentador amarillo",
+      "código": "0509",
+      "precio": "650"
+    },
+    {
+      "id": 113,
+      "categoría": "materiales de la colmena",
+      "nombre": "marcos alambrados sin cera natural premium",
+      "código": "0261p",
+      "precio": "1.500"
+    },
+    {
+      "id": 114,
+      "categoría": "materiales de la colmena",
+      "nombre": "piso natural premium",
+      "código": "0210p",
+      "precio": "10.990"
+    },
+    {
+      "id": 115,
+      "categoría": "materiales de la colmena",
+      "nombre": "rejilla excluidora de reinas plástica lyson",
+      "código": "0707",
+      "precio": "3.000"
+    },
+    {
+      "id": 116,
+      "categoría": "materiales de la colmena",
+      "nombre": "techo natural premium",
+      "código": "0240p",
+      "precio": "14.990"
+    },
+    {
+      "id": 117,
+      "categoría": "materiales de la colmena",
+      "nombre": "trampa de polen plástica desarmable imp.",
+      "código": "0603",
+      "precio": "8.900"
+    },
+    {
+      "id": 118,
+      "categoría": "productos de la colmena",
+      "nombre": "miel de abejas pet 1 kilo",
+      "código": "5391",
+      "precio": "7.600"
+    },
+    {
+      "id": 119,
+      "categoría": "productos de la colmena",
+      "nombre": "polen natural bolsa 1 kilo",
+      "código": "7101",
+      "precio": "19.900"
+    },
+    {
+      "id": 120,
+      "categoría": "souvenir",
+      "nombre": "palito mielero madera",
+      "código": "9100",
+      "precio": "900"
+    },
+    {
+      "id": 121,
+      "categoría": "souvenir",
+      "nombre": "reloj abejita con portalápiz",
+      "código": "9102",
+      "precio": "5.000"
+    },
+    {
+      "id": 122,
+      "categoría": "suplementos nutricionales",
+      "nombre": "aminobees l fco. 1 lt.",
+      "código": "1120",
+      "precio": "24.950"
+    },
+    {
+      "id": 123,
+      "categoría": "suplementos nutricionales",
+      "nombre": "azúcar granulada 25 kilos",
+      "código": "1006",
+      "precio": "29.950"
+    },
+    {
+      "id": 124,
+      "categoría": "suplementos nutricionales",
+      "nombre": "azúcar micropulverizada 25 kilos",
+      "código": "1007",
+      "precio": "39.800"
+    },
+    {
+      "id": 125,
+      "categoría": "suplementos nutricionales",
+      "nombre": "fructosa balde 25 kg",
+      "código": "1010b",
+      "precio": "36.990"
+    },
+    {
+      "id": 126,
+      "categoría": "suplementos nutricionales",
+      "nombre": "fructosa bidón 7 kg",
+      "código": "1002b",
+      "precio": "8.950"
+    },
+    {
+      "id": 127,
+      "categoría": "suplementos nutricionales",
+      "nombre": "levadura de cerveza 25 kilos",
+      "código": "1028",
+      "precio": "54.750"
+    },
+    {
+      "id": 128,
+      "categoría": "suplementos nutricionales",
+      "nombre": "levadura de cerveza bolsa 2 kg.",
+      "código": "1022",
+      "precio": "9.308"
+    },
+    {
+      "id": 129,
+      "categoría": "suplementos nutricionales",
+      "nombre": "mezcla nutricional nutra bee bolsa 10 kg.",
+      "código": "1033",
+      "precio": "50.600"
+    },
+    {
+      "id": 130,
+      "categoría": "suplementos nutricionales",
+      "nombre": "mezcla nutricional nutra bee bolsa 2 kg.",
+      "código": "1032",
+      "precio": "10.950"
+    },
+    {
+      "id": 131,
+      "categoría": "suplementos nutricionales",
+      "nombre": "promotor l 1 lt.",
+      "código": "1110",
+      "precio": "28.900"
+    },
+    {
+      "id": 132,
+      "categoría": "tratamientos sanitarios",
+      "nombre": "ácido acético 1 litro",
+      "código": "1710",
+      "precio": "7.990"
+    },
+    {
+      "id": 133,
+      "categoría": "tratamientos sanitarios",
+      "nombre": "ácido fórmico 1 litro",
+      "código": "1520",
+      "precio": "7.990"
+    },
+    {
+      "id": 134,
+      "categoría": "tratamientos sanitarios",
+      "nombre": "aluen cap env. 15 dosis",
+      "código": "1504",
+      "precio": "42.990"
+    },
+    {
+      "id": 135,
+      "categoría": "tratamientos sanitarios",
+      "nombre": "alvar ´ pack 2 tiras",
+      "código": "1501",
+      "precio": "2.690"
+    },
+    {
+      "id": 136,
+      "categoría": "tratamientos sanitarios",
+      "nombre": "glicerina 1 litro",
+      "código": "1960",
+      "precio": "6.250"
+    },
+    {
+      "id": 137,
+      "categoría": "tratamientos sanitarios",
+      "nombre": "paradiclorobenceno bolsa 1/2 kg",
+      "código": "1801",
+      "precio": "4.250"
+    },
+    {
+      "id": 138,
+      "categoría": "tratamientos sanitarios",
+      "nombre": "sublimador para ac. oxálico para batería imp.",
+      "código": "1926",
+      "precio": "65.500"
+    },
+    {
+      "id": 139,
+      "categoría": "tratamientos sanitarios",
+      "nombre": "tablitas cartón para tratamiento sanitario",
+      "código": "1519",
+      "precio": "70"
+    },
+    {
+      "id": 140,
+      "categoría": "tratamientos sanitarios",
+      "nombre": "timol cristales 1 kg",
+      "código": "1540",
+      "precio": "49.990"
+    },
+    {
+      "id": 141,
+      "categoría": "tratamientos sanitarios",
+      "nombre": "vaselina líquida 1 litro",
+      "código": "1950",
+      "precio": "6.250"
+    },
+    {
+      "id": 142,
+      "categoría": "tratamientos sanitarios",
+      "nombre": "verostop pack 10 un.",
+      "código": "1500",
+      "precio": "13.990"
+    },
+    {
+      "id": 143,
+      "categoría": "vestuario",
+      "nombre": "buzo cafe con velo redondo lyson t-l",
+      "código": "6084",
+      "precio": "0"
+    },
+    {
+      "id": 144,
+      "categoría": "vestuario",
+      "nombre": "buzo cafe con velo redondo lyson t-m",
+      "código": "6083",
+      "precio": "0"
+    },
+    {
+      "id": 145,
+      "categoría": "vestuario",
+      "nombre": "buzo cafe con velo redondo lyson t-xl",
+      "código": "6085",
+      "precio": "79.990"
+    },
+    {
+      "id": 146,
+      "categoría": "vestuario",
+      "nombre": "buzo económico blanco (poplin) talla l",
+      "código": "6104",
+      "precio": "7.400"
+    },
+    {
+      "id": 147,
+      "categoría": "vestuario",
+      "nombre": "buzo económico blanco (poplin) talla m",
+      "código": "6103",
+      "precio": "7.400"
+    },
+    {
+      "id": 148,
+      "categoría": "vestuario",
+      "nombre": "buzo económico blanco (poplin) talla xl",
+      "código": "6105",
+      "precio": "7.400"
+    },
+    {
+      "id": 149,
+      "categoría": "vestuario",
+      "nombre": "buzo económico blanco (poplin) talla xxl",
+      "código": "6106",
+      "precio": "7.400"
+    },
+    {
+      "id": 150,
+      "categoría": "vestuario",
+      "nombre": "buzo económico gris talla l",
+      "código": "6194",
+      "precio": "7.400"
+    },
+    {
+      "id": 151,
+      "categoría": "vestuario",
+      "nombre": "buzo económico gris talla m",
+      "código": "6193",
+      "precio": "7.400"
+    },
+    {
+      "id": 152,
+      "categoría": "vestuario",
+      "nombre": "buzo económico gris talla xl",
+      "código": "6195",
+      "precio": "7.400"
+    },
+    {
+      "id": 153,
+      "categoría": "vestuario",
+      "nombre": "chaqueta con velo esférico talla l",
+      "código": "6264",
+      "precio": "45.000"
+    },
+    {
+      "id": 154,
+      "categoría": "vestuario",
+      "nombre": "chaqueta con velo esférico talla m",
+      "código": "6263",
+      "precio": "45.000"
+    },
+    {
+      "id": 155,
+      "categoría": "vestuario",
+      "nombre": "chaqueta con velo esférico talla xl",
+      "código": "6265",
+      "precio": "45.000"
+    },
+    {
+      "id": 156,
+      "categoría": "vestuario",
+      "nombre": "chaqueta con velo esférico talla xxl",
+      "código": "6266",
+      "precio": "45.000"
+    },
+    {
+      "id": 157,
+      "categoría": "vestuario",
+      "nombre": "chaqueta con velo monjita bordada talla 12",
+      "código": "6250",
+      "precio": "34.000"
+    },
+    {
+      "id": 158,
+      "categoría": "vestuario",
+      "nombre": "chaqueta con velo monjita bordada talla 6",
+      "código": "6251",
+      "precio": "34.000"
+    },
+    {
+      "id": 159,
+      "categoría": "vestuario",
+      "nombre": "chaqueta con velo monjita bordada talla l",
+      "código": "6254",
+      "precio": "36.500"
+    },
+    {
+      "id": 160,
+      "categoría": "vestuario",
+      "nombre": "chaqueta con velo monjita bordada talla m",
+      "código": "6253",
+      "precio": "36.500"
+    },
+    {
+      "id": 161,
+      "categoría": "vestuario",
+      "nombre": "chaqueta con velo monjita bordada talla xl",
+      "código": "6255",
+      "precio": "39.500"
+    },
+    {
+      "id": 162,
+      "categoría": "vestuario",
+      "nombre": "chaqueta con velo monjita bordada talla xxl",
+      "código": "6256",
+      "precio": "39.500"
+    },
+    {
+      "id": 163,
+      "categoría": "vestuario",
+      "nombre": "chaqueta con velo monjita nac talla m",
+      "código": "6213",
+      "precio": "42.000"
+    },
+    {
+      "id": 164,
+      "categoría": "vestuario",
+      "nombre": "chaqueta con velo monjita nac talla xl",
+      "código": "6215",
+      "precio": "42.000"
+    },
+    {
+      "id": 165,
+      "categoría": "vestuario",
+      "nombre": "guante apícola agro t-l",
+      "código": "6774",
+      "precio": "7.900"
+    },
+    {
+      "id": 166,
+      "categoría": "vestuario",
+      "nombre": "guante apícola agro t-xl",
+      "código": "6775",
+      "precio": "7.900"
+    },
+    {
+      "id": 167,
+      "categoría": "vestuario",
+      "nombre": "guante apícola agro t-xxl",
+      "código": "6776",
+      "precio": "7.900"
+    },
+    {
+      "id": 168,
+      "categoría": "vestuario",
+      "nombre": "guante apícola nacional talla l",
+      "código": "6714",
+      "precio": "8.600"
+    },
+    {
+      "id": 169,
+      "categoría": "vestuario",
+      "nombre": "guante apícola nacional talla m",
+      "código": "6713",
+      "precio": "8.600"
+    },
+    {
+      "id": 170,
+      "categoría": "vestuario",
+      "nombre": "guante apícola nacional talla s",
+      "código": "6712",
+      "precio": "8.600"
+    },
+    {
+      "id": 171,
+      "categoría": "vestuario",
+      "nombre": "guante apícola nacional talla xl",
+      "código": "6715",
+      "precio": "8.600"
+    },
+    {
+      "id": 172,
+      "categoría": "vestuario",
+      "nombre": "guante apícola nacional talla xs",
+      "código": "6711",
+      "precio": "8.600"
+    },
+    {
+      "id": 173,
+      "categoría": "vestuario",
+      "nombre": "guante apícola nacional talla xxl",
+      "código": "6716",
+      "precio": "8.600"
+    },
+    {
+      "id": 174,
+      "categoría": "vestuario",
+      "nombre": "guante apícola niño",
+      "código": "6710",
+      "precio": "9.180"
+    },
+    {
+      "id": 175,
+      "categoría": "vestuario",
+      "nombre": "guante con puño cafe talla l",
+      "código": "6734",
+      "precio": "10.000"
+    },
+    {
+      "id": 176,
+      "categoría": "vestuario",
+      "nombre": "guante con puño cafe talla m",
+      "código": "6733",
+      "precio": "10.000"
+    },
+    {
+      "id": 177,
+      "categoría": "vestuario",
+      "nombre": "guante nitrilo puño largo citt. t-10",
+      "código": "6755",
+      "precio": "12.500"
+    },
+    {
+      "id": 178,
+      "categoría": "vestuario",
+      "nombre": "guante nitrilo puño largo citt. t-9",
+      "código": "6754",
+      "precio": "12.500"
+    },
+    {
+      "id": 179,
+      "categoría": "vestuario",
+      "nombre": "guante puño largo ventilado citt. t-l",
+      "código": "6744",
+      "precio": "15.690"
+    },
+    {
+      "id": 180,
+      "categoría": "vestuario",
+      "nombre": "guante puño largo ventilado citt. t-m",
+      "código": "6743",
+      "precio": "15.690"
+    },
+    {
+      "id": 181,
+      "categoría": "vestuario",
+      "nombre": "guante puño largo ventilado citt. t-s",
+      "código": "6742",
+      "precio": "15.690"
+    },
+    {
+      "id": 182,
+      "categoría": "vestuario",
+      "nombre": "guante puño largo ventilado citt. t-xl",
+      "código": "6745",
+      "precio": "15.690"
+    },
+    {
+      "id": 183,
+      "categoría": "vestuario",
+      "nombre": "overol con velo monjita nacional talla l",
+      "código": "6014",
+      "precio": "57.480"
+    },
+    {
+      "id": 184,
+      "categoría": "vestuario",
+      "nombre": "overol con velo monjita nacional talla xl",
+      "código": "6015",
+      "precio": "57.480"
+    },
+    {
+      "id": 185,
+      "categoría": "vestuario",
+      "nombre": "repuesto careta monjita citt. amarilla",
+      "código": "6490a",
+      "precio": "23.990"
+    },
+    {
+      "id": 186,
+      "categoría": "vestuario",
+      "nombre": "sombrero cucalón imp.",
+      "código": "6610",
+      "precio": "14.900"
+    },
+    {
+      "id": 187,
+      "categoría": "vestuario",
+      "nombre": "velo cowboy basico",
+      "código": "6425",
+      "precio": "9.900"
+    },
+    {
+      "id": 188,
+      "categoría": "vestuario",
+      "nombre": "velo cowboy gamuza",
+      "código": "6425c",
+      "precio": "9.900"
+    },
+    {
+      "id": 189,
+      "categoría": "vestuario",
+      "nombre": "velo esferico con pechera",
+      "código": "6426p",
+      "precio": "29.990"
+    },
+    {
+      "id": 190,
+      "categoría": "vestuario",
+      "nombre": "velo monjita con pechera malla americana",
+      "código": "6418",
+      "precio": "20.200"
+    },
+    {
+      "id": 191,
+      "categoría": "vestuario",
+      "nombre": "velo redondo con cordon",
+      "código": "6428",
+      "precio": "19.800"
+    },
+    {
+      "id": 192,
+      "categoría": "vestuario",
+      "nombre": "velo redondo con malla fina (tul)",
+      "código": "6414",
+      "precio": "18.700"
+    },
+    {
+      "id": 193,
+      "categoría": "vestuario",
+      "nombre": "velo redondo con pechera",
+      "código": "6423",
+      "precio": "19.800"
+    }
+  ]
+}
