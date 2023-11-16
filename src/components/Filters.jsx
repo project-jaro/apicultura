@@ -1,44 +1,89 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { useForm } from '../hooks/useForm';
+import { productos } from '../bd/item.json';
+import { Products } from '../components/Products.jsx'
+import { useCategory } from '../context/CategoryContext.jsx';
+import {AiOutlineSearch} from 'react-icons/ai';
 
-export const Filters = ({onChange}) => {
 
-    const [minPrice, setMinPrice] = useState(0);
+export const Filters = ({ onChange }) => {
 
-    const handleChangeMinPrice = (event) =>{
+    //const [minPrice, setMinPrice] = useState(0);
+    const [search, setSearch] = useState("");
+    const { category, setCategory } = useCategory();
 
-        setMinPrice(event.target.value);
 
-        onChange(prevState =>({
+    // const handleChangeMinPrice = (event) => {
+
+    //     setMinPrice(event.target.value);
+
+    //     onChange(prevState => ({
+    //         ...prevState,
+    //         minPrice: event.target.value
+    //     }))
+
+    // }
+
+    const handleChangeCategory = (event) => {
+
+        const newCategoria = event.target.value;
+        setCategory(newCategoria);
+        onChange((prevState) => ({
             ...prevState,
-            minPrice: event.target.value
-        }))
+            categoria: newCategoria,
+        }));
 
     }
 
-    const handleChangeCategory = (event) =>{
+    //probar
+    const onSearchChange = (event) => {
 
-        onChange(prevState =>({
+        setSearch(event.target.value)
+
+        onChange(prevState => ({
+
             ...prevState,
-            categoria: event.target.value
+            nombre: event.target.value
+
         }))
     }
+
 
     return (
-        <section className='flex flex-col p-5 gap-3 items-start'>
+        <section className='flex flex-col md:flex-row justify-center gap-3 items-center'>
 
-            <div>
-                <label className='p-3' htmlFor="Categoria"> Categoria</label>
-                <select className="rounded-md w-40" id='catagoria' onChange={handleChangeCategory}>
+            <form className="mb-3 md:mb-0 w-80">
+                <span className='text-xs text-tiber-500 dark:text-yellow-400'>Buscar</span>
+                <div className="relative">
+                    <input type="text" value={search} onChange={onSearchChange} autoComplete="off" className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg 
+                    bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+                    placeholder="Buscar producto..."/>
+                </div>
+            </form>
+
+            <div className="w-full md:w-80 mb-3 md:mb-0">
+                <span className="text-xs text-tiber-500 dark:text-yellow-400">Categoria</span>
+                <select className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" id='catagoria' onChange={handleChangeCategory}>
                     <option value="all">Todas</option>
-                    <option value="Ropa">Ropa</option>
-                    <option value="Accesorios">Accesorios</option>
+                    <option value="articulosDeLaboratorio">Articulos de laboratorio</option>
+                    <option value="accesorios">Accesorios</option>
+                    <option value="control de plagas">Control de plagas</option>
+                    <option value="envases">Envases</option>
+                    <option value="etiquetas">Etiquetas</option>
+                    <option value="vestuario">Vestuario</option>
+                    <option value="herramientas e insumos">Herramientas e insumos</option>
+                    <option value="implementosReinas">Crianza de reinas</option>
+                    <option value="maquinarias">Maquinarias</option>
+                    <option value="tratamientos sanitarios">Tratamientos sanitarios</option>
+                    <option value="souvenir">Souvenires</option>
+                    <option value="maquinarias">Maquinarias</option>
                 </select>
             </div>
 
-            <div className='items-center '>
+            {/* <div className='flex flex-col items-center'>
                 <label className='p-3' htmlFor="price">Precio a partir de :</label>
                 <input
-                    className="h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-pink-500"
+                    className="w-full max-w-md h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-pink-500"
                     type="range"
                     id="price"
                     min='10000'
@@ -46,11 +91,9 @@ export const Filters = ({onChange}) => {
                     onChange={handleChangeMinPrice}
                 />
                 <span className='p-1 font-bold text-violet-700'>$ {minPrice}</span>
-            </div>
+            </div> */}
 
-            
-                
-          
         </section>
+
     )
 }

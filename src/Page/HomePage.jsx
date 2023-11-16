@@ -1,12 +1,13 @@
 import React, { useContext, useState } from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { Link, Route, Routes } from 'react-router-dom'
 import { UserContext } from '../context/UserContext';
-import { Products } from '../components/Products';
 import { productos } from '../bd/item.json';
-import { Filters } from '../components/Filters';
-import { HeaderProducts } from '../components/HeaderProducts';
 import { Slider } from '../components/Slider';
-import { Footer } from '../components/Footer';
+import { GiDrippingHoney, GiHoneyJar } from 'react-icons/gi';
+import { BsArrowRight } from 'react-icons/bs';
+import { Map } from '../components/Map';
+
+
 
 export const HomePage = () => {
 
@@ -38,47 +39,64 @@ export const HomePage = () => {
 
   return (
 
-    <main className='dark:bg-gray-800'>
-      
-      <HeaderProducts changeFilters={setFilters} />
-      <Products products={filteredProducts} /> 
+    <main className='dark:bg-pearl-950'>
 
-      <div className="p-10">
-        <button className="bg-violet-200 p-5 rounded-full items-center justify-center">
-          <span className="flex material-symbols-rounded text-violet-500">
-            shopping_cart
-          </span>
-        </button>
-      </div>
+      <section>
+        <div className="bg-cover h-[480px] md:h-[780px] w-full bg-center bg-[url('src/img/bee2.jpg')]">
+          <div className="flex flex-col h-full backdrop-brightness-50 items-center animate-fade-right justify-center">
+            <div className="flex flex-col md:text-2xl">
+              <h1 className="text-white font-obviously font-semibold text-3xl md:text-6xl">Bienvenidos a</h1>
+              <h3 className="font-extrabold text-6xl md:text-9xl bg-clip-text text-transparent bg-gradient-to-r from-yellow-400 to-green-300 pb-3"> Apiamigas !</h3>
+            </div>
 
-      //-----
+            <div className="flex flex-col md:flex-row gap-2 justify-center items-center mt-6">
+              <h1 className="text-lg md:text-3xl  text-white">Conoce nuestros :</h1>
+              <Link to="/productos" className="button gap-2">
+                <span>Productos</span>
+                <BsArrowRight size={20} />
+              </Link>
+            </div>
 
-      <Slider />
+          </div>
 
-      <section className="md:grid grid-cols-2">
-        <div className="bg-cover brightness-125 bg-center bg-[url('src/img/letrero.jpg')]">
-        
-
-        </div>
-
-        <div className="bg-slate-500 px-20 py-20">
-              <p className="max-w-3xl text-2xl text-">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Adipisci assumenda ad excepturi quis eius fugiat maxime dolorum similique rerum
-                  quisquam repellendus iste molestiae et, vel corrupti officiis ex labore. In.
-              </p>
-
-              <p className="max-w-3xl text-2xl">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                Fuga iure adipisci ipsum saepe mollitia facere delectus suscipit, harum porro perferendis a accusamus tenetur sapiente error molestiae soluta corrupti! Quae, dolorum.
-              </p>
         </div>
       </section>
 
-      <section className="flex flex-col gap-11 items-center justify-center p-20 bg-slate-200">
-        <h1 className="ml-11 py-3 pl-3 font-bold text-5xl bg-clip-text text text-transparent bg-gradient-to-r from-yellow-400 to-yellow-700" >Ubicacion</h1>
-        <iframe className="sm:w-full h-96 w-full rounded-xl" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.7819382749844!2d-70.74828512349367!3d-33.817940016427734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9663230fa8c58c7f%3A0x6da8b1be2bb5cf07!2sAgro%20Apicultura%20(Centro%20Ap%C3%ADcola%20Paine)!5e0!3m2!1ses-419!2scl!4v1693612769330!5m2!1ses-419!2scl" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <section className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 mx-auto  mt-10 md:mt-20">
+        <div className="bg-pearl-50 dark:bg-pearl-950 text-slate-700 dark:text-meteor-400 flex flex-col flex-wrap gap-5 text-base md:text-xl px-5 md:px-20 py-10 md:py-20">
+          <h2 className="tittle-nav font-semibold text-tiber-500  text-center text-4xl dark:text-tiber-500 md:text-5xl lg:text-6xl">¿ Quienes somos ?</h2>
+          <p className="md:text-lg lg:text-xl">
+            Apiamigas, es una empresa Painina, que nace de la asociación de Pilar Azócar Tudela y Erika Torres Olivos, con 13 años dedicadas a la venta de insumos y maquinaria apícola en dos empresas del rubro.
+          </p>
+          <p className="md:text-lg lg:text-xl">
+            Nuestra empresa busca satisfacer las necesidades de los apicultores a nivel nacional; ofreciendo una amplia variedad de insumos y maquinarias de alta calidad a precios competitivos y brindar una atención personalizada a cada cliente que nos visita o contacta a través de nuestras redes sociales y/o página web.
+          </p>
+          <p className="md:text-lg lg:text-xl">
+            Queremos ser socias confiables para cada apicultor y ser reconocidas por nuestra calidad, compromiso y transparencia.
+          </p>
+        </div>
+
+        <div className="bg-cover brightness-125 contrast-125 bg-center bg-[url('src/img/letrero.jpg')] h-auto md:h-[auto] md:w-auto md:order-first">
+          <img
+            src="src/img/letrero.jpg"
+            alt="Letrero"
+            className="object-cover w-full h-full md:hidden"
+          />
+        </div>
       </section>
 
+      <section className="flex flex-col items-center text-slate-700 dark:text-white py-10 md:py-24">
+        <div className="flex flex-col justify-center items-center p-14">
+          <GiDrippingHoney className="text-yellow-500 dark:text-yellow-400" size={150} />
+          <h1 className='text-3xl md:text-5xl font-bold'>Horario de atención</h1>
+          <p className='py-2 text-base md:text-2xl'>Lunes a viernes</p>
+          <p className='text-base md:text-2xl'>de 9:00 a 17:30 horas</p>
+        </div>
+      </section>
+
+      <Slider></Slider>
+
+      <Map />
     </main>
 
   )

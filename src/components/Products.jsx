@@ -1,40 +1,100 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { Paginations } from './Paginations';
+import { useCategory } from '../context/CategoryContext';
+
 
 export function Products({ products }) {
-    return (
-        <div className="flex items-center justify-center m-2">
-            <ul className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 items-center animate-fade-up mt-11">
-                {products.map(product => (
-                    
-                    <li className='m-5' key={product.id}>
-                        {/* Componente */}
 
-                        <div className="w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                            <a href="#">
-                                <img className="p-8 w-72 rounded-t-lg" src={product.img} alt={product.nombre} />
-                            </a>
+    const [productsPerPage, setProductsPerPage] = useState(36);
+    const [currentPage, setCurrentPage] = useState(1);
+
+    const { category } = useCategory();
+
+    const lastIndex = currentPage * productsPerPage;
+    const firstIndex = lastIndex - productsPerPage
+
+
+    const totalProducts = products.length;
+
+    useEffect(() => {
+        // Este efecto se ejecutará cada vez que la categoría cambie.
+        setCurrentPage(1); // Restablece currentPage a 1 cuando cambia la categoría.
+
+    }, [category, products]);
+
+
+
+    const formatThousandSeparator = (number) => {
+
+        return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    }
+
+    return (
+
+        <div className="flex flex-col justify-center items-center px-12 py-5">
+
+            <Paginations
+                productsPerPage={productsPerPage}
+                currentPage={currentPage}
+                setCurrentPage={setCurrentPage}
+                totalProducts={totalProducts}
+
+            />
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-10">
+                {products.map(product => (
+                    <div key={product.id} className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
+                        {/* Componente */}
+                        <div className="w-full h-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-pearl-950 dark:border-gray-700">
+                            <div className="items-center justify-center w-full bg-slate-50 dark:bg-pearl-950">
+                                <img
+                                    className="w-full h-72 p-8 mx-auto mb-4 sm:h-full md:w-auto md:h-auto lg:h-72 lg:w-auto rounded-t-lg animate-fade-down animate-once"
+                                    src={product.img}
+                                    alt={product.nombre}
+                                />
+                            </div>
                             <div className="px-5 pb-5">
-                                <a href="#">
-                                    <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">{product.nombre}</h5>
-                                </a>
-                                <div className="flex items-center mt-2.5 mb-5">
+                                <div>
+                                    <p className="text-md font-semibold tracking-tight sm:text-sm md:text-sm xl:text-lg text-tiber-600 dark:text-meteor-400">
+                                        {product.nombre.charAt(0).toUpperCase() + product.nombre.slice(1)}
+                                    </p>
                                 </div>
+                                {product.talla && product.talla.length > 0 && (
+                                    <div className="flex items-center flex-wrap py-2">
+                                        <p className="text-slate-950 text-sm dark:text-white">Talla :</p>
+                                        <ul className="grid grid-cols-4 md:grid-cols-3 xl:grid-cols-6 ml-1 gap-1 text-sm text-white">
+                                            {product.talla.map(talla => (
+                                                <li key={talla} className='bg-tiber-500 p-1 flex w-7 text-center justify-center rounded-md text-xs dark:bg-tiber-700'>{talla}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                )}
+                                <div className="flex items-center mt-2.5 mb-5"></div>
                                 <div className="flex items-center justify-between">
-                                    <span className="text-3xl font-bold text-gray-900 dark:text-white">${product.precio}</span>
-                                    <a href="#" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Informacion del producto</a>
+                                    <span className="text-xl font-bold md:text-lg text-slate-700 dark:text-white">
+                                        $ {formatThousandSeparator(product.precio)}
+                                    </span>
+                                    {/* <a
+                                        href="#"
+                                        className="text-white bg-meteor-700 hover:bg-meteor-400 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-tiber-700 dark:hover:bg-tiber-500 dark:focus:ring-blue-800"
+                                    >
+                                        Solicitar
+                                    </a> */}
                                 </div>
                             </div>
                         </div>
+                    </div>
+                )).slice(firstIndex, lastIndex)}
+            </div>
 
+            <Paginations
+                productsPerPage={productsPerPage}
+                currentPage={currentPage}
+                setCurrentPage={setCurrentPage}
+                totalProducts={totalProducts}
 
-                    </li>
-                ))}
-            </ul>
-
-            <br />
-
+            />
         </div>
-
 
     )
 }

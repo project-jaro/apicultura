@@ -9,10 +9,13 @@ export const Slider = () => {
             url: 'src/img/fotoportada.jpg'
         },
         {
-            url: 'https://t1.ea.ltmcdn.com/es/posts/0/1/5/cuantos_tipos_de_abejas_hay_24510_0_600.webp'
+            url: 'src/img/local1.jpg'
         },
         {
             url: 'src/img/oficina.jpg'
+        },
+        {
+            url: 'src/img/local2.jpg'
         }
     ]
 
@@ -40,7 +43,9 @@ export const Slider = () => {
 
     //1920 1400
     return (
-        <div className="max-w-[1950px] h-[780px] w-full m-auto py-16 px-4 relative group mt-8">
+
+
+        <div className="max-w-[1500px] h-[900px] w-full m-auto py-16 px-4 relative group mt-8 hidden md:block">
 
             <div className="flex py-10 absolute top-[55%] left-[5%] backdrop-brightness-125 drop-shadow-xl bg-white/30  rounded-full">
                 <img className="brightness-50 w-64 px-10" src="src/img/logo.png" alt="" />
@@ -58,11 +63,13 @@ export const Slider = () => {
             <div className="flex justify-center gap-2 mt-5">
                 {slides.map((slide, slideIndex) => (
 
-                    <div key={slideIndex} onClick={() => goToSlide(slideIndex)} className={`transition-all cursor-pointer w-2 h-2 bg-yellow-600 rounded-full ${currentIndex == slideIndex ? "p-1" : "bg-opacity-50"}`}>
+                    <div key={slideIndex} onClick={() => goToSlide(slideIndex)} className={`transition-all cursor-pointer w-2 h-2 bg-tiber-600 rounded-full ${currentIndex == slideIndex ? "p-1" : "bg-opacity-50"}`}>
                        
                     </div>
                 ))}
             </div>
         </div>
+
+
     )
 }

@@ -20,9 +20,9 @@ export const MainApp = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="login" element={<LoginPage />} />
         <Route path="about" element={<AboutePage />} />
-        <Route path='contact' element={<ContactPage />} />
-        <Route path='Products' element={<ProductsPage />} />
-        <Route path='/*' element={<Navigate to="/about" />} />
+        <Route path='contacto' element={<ContactPage />} />
+        <Route path='Productos' element={<ProductsPage />} />
+        <Route path='/*' element={<Navigate to="/" />} />
 
       </Routes>
       <Footer />
