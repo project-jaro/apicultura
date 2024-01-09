@@ -3,7 +3,7 @@ import { BiMap } from 'react-icons/bi'
 
 export const Map = () => {
     return (
-        <section className="flex flex-col gap-5 md:gap-11 font-semibold items-center text-center text-tiber-500 dark:text-yellow-400 justify-center mt-28">
+        <section className="flex flex-col gap-5 md:gap-11 font-semibold items-center text-center text-amber-600 dark:text-yellow-400 justify-center mt-28">
             <h1 className="py-3 text-2xl md:text-5xl">Ubicacion</h1>
             <div className="flex items-center text-sm md:text-2xl text-slate-700 dark:text-white gap-3">
                 <BiMap className="text-red-600" size={40} />

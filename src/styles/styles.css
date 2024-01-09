@@ -2,6 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100&family=Marck+Script&family=Montserrat:wght@100&family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
@@ -13,7 +14,6 @@
 
     font-family: 'Marck Script', cursive;
 }
-
 
 .button {
     --color: #ffffff;
@@ -90,4 +90,14 @@
     border: 5px solid;
     float: left;
     transition: all 0.5 ease;
+}
+
+.imgBanner{
+
+    background-image: url('/assets/bee2.jpg');
+}
+
+.imgText{
+
+    background-image: url('/public/assets/letrero.jpg');
 }

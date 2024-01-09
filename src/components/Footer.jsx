@@ -11,26 +11,26 @@ export const Footer = () => {
             <div className="mx-auto w-full  max-w-screen-xl px-4">
                 <div className="md:flex md:justify-between">
                     <div className='text-3xl flex justify-center items-center mb-4 md:mb-0 md:mr-8'>
-                        <img className="w-44 md:w-52" src="./src/img/logo.png" alt="logo" />
+                        <img className="w-44 md:w-52" src="/assets/logo.png" alt="logo" />
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 md:gap-40 items-center md:mr-8">
                         <div className="flex flex-col items-center text-sm text-center md:text-base">
                             <h2 className="mb-8 text-sm font-semibold text-gray-900 uppercase dark:text-yellow-300">Redes sociales</h2>
 
                             <ul className="flex">
-                                <li className="w-12 h-12 flex items-center justify-center mx-2 cursor-pointer rounded-full border-2 border-tiber-500 dark:border-yellow-400 transition-all duration-500 ease-in-out group hover:border-pink-500 dark:hover:border-pink-500">
+                                <li className="w-12 h-12 flex items-center justify-center mx-2 cursor-pointer rounded-full border-2 border-amber-600 dark:border-yellow-400 transition-all duration-500 ease-in-out group hover:border-pink-500 dark:hover:border-pink-500">
                                     <a href="https://www.instagram.com/apiamigas_paine/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full h-full">
-                                        <FaInstagram className='text-tiber-500 dark:text-yellow-400 transition-all duration-500 ease-in-out group-hover:text-pink-500' size={24} />
+                                        <FaInstagram className='text-amber-600 dark:text-yellow-400 transition-all duration-500 ease-in-out group-hover:text-pink-500' size={24} />
                                     </a>
                                 </li>
-                                <li className="w-12 h-12 flex items-center justify-center mx-2 cursor-pointer rounded-full border-2 border-tiber-500 dark:border-yellow-400 transition-all duration-500 ease-in-out group hover:border-blue-500 dark:hover:border-blue-500">
+                                <li className="w-12 h-12 flex items-center justify-center mx-2 cursor-pointer rounded-full border-2 border-amber-600 dark:border-yellow-400 transition-all duration-500 ease-in-out group hover:border-blue-500 dark:hover:border-blue-500">
                                     <a href="https://www.facebook.com/profile.php?id=61550040404164" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full h-full">
-                                        <FaFacebookF className='text-tiber-500 dark:text-yellow-400 transition-all duration-500 ease-in-out group-hover:text-blue-500' size={24} />
+                                        <FaFacebookF className='text-amber-600 dark:text-yellow-400 transition-all duration-500 ease-in-out group-hover:text-blue-500' size={24} />
                                     </a>
                                 </li>
-                                <li className="w-12 h-12 flex items-center justify-center mx-2 cursor-pointer rounded-full border-2 border-tiber-500 dark:border-yellow-400 transition-all duration-500 ease-in-out group hover:border-green-500 dark:hover:border-green-500">
+                                <li className="w-12 h-12 flex items-center justify-center mx-2 cursor-pointer rounded-full border-2 border-amber-600 dark:border-yellow-400 transition-all duration-500 ease-in-out group hover:border-green-500 dark:hover:border-green-500">
                                     <a href="https://wa.me/56927429042" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center w-full h-full">
-                                        <FaWhatsapp className='text-tiber-500 dark:text-yellow-400 transition-all duration-500 ease-in-out group-hover:text-green-500' size={24} />
+                                        <FaWhatsapp className='text-amber-600 dark:text-yellow-400 transition-all duration-500 ease-in-out group-hover:text-green-500' size={24} />
                                     </a>
                                 </li>
                             </ul>
@@ -43,11 +43,11 @@ export const Footer = () => {
 
                             <ul className="flex md:flex-col text-gray-500 gap-5 dark:text-gray-400">
                                 <li className="flex items-center gap-2">
-                                    <FaPhoneAlt className="text-tiber-500 dark:text-yellow-300" size={24} />
+                                    <FaPhoneAlt className="text-amber-600 dark:text-yellow-300" size={24} />
                                     <h4 className="hover:text-tiber-600 dark:hover:text-yellow-500">+569 27429042</h4>
                                 </li>
                                 <li className="flex items-center gap-2">
-                                    <MdOutlineMail className="text-tiber-500 dark:text-yellow-300" size={30} />
+                                    <MdOutlineMail className="text-amber-600 dark:text-yellow-300" size={30} />
                                     <h4 className="hover:text-tiber-600 dark:hover:text-yellow-500">Apiamigas@apiamigas.cl</h4>
                                 </li>
                             </ul>

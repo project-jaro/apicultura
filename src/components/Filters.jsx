@@ -53,17 +53,17 @@ export const Filters = ({ onChange }) => {
         <section className='flex flex-col md:flex-row justify-center gap-3 items-center'>
 
             <form className="mb-3 md:mb-0 w-80">
-                <span className='text-xs text-tiber-500 dark:text-yellow-400'>Buscar</span>
+                <span className='text-xs text-amber-500 dark:text-yellow-400'>Buscar</span>
                 <div className="relative">
                     <input type="text" value={search} onChange={onSearchChange} autoComplete="off" className="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg 
-                    bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+                    bg-gray-50 focus:ring-amber-600 focus:amber-blue-600 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-yellow-500 dark:focus:border-yellow-500" 
                     placeholder="Buscar producto..."/>
                 </div>
             </form>
 
             <div className="w-full md:w-80 mb-3 md:mb-0">
-                <span className="text-xs text-tiber-500 dark:text-yellow-400">Categoria</span>
-                <select className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" id='catagoria' onChange={handleChangeCategory}>
+                <span className="text-xs text-amber-500 dark:text-yellow-400">Categoria</span>
+                <select className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-amber-700 focus:border-amber-500 block w-full p-3 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-yellow-500 dark:focus:border-yellow-500" id='catagoria' onChange={handleChangeCategory}>
                     <option value="all">Todas</option>
                     <option value="articulosDeLaboratorio">Articulos de laboratorio</option>
                     <option value="accesorios">Accesorios</option>

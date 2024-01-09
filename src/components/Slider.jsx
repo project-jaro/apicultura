@@ -1,21 +1,22 @@
 import React, { useState } from 'react'
 import { BsChevronCompactLeft, BsChevronCompactRight } from 'react-icons/bs';
-import { RxDotFilled } from 'react-icons/rx'
+import { RxDotFilled } from 'react-icons/rx';
 
 export const Slider = () => {
 
     const slides = [
         {
-            url: 'src/img/fotoportada.jpg'
+            url: 'assets/fotoportada.jpg'
+            
         },
         {
-            url: 'src/img/local1.jpg'
+            url: 'assets/local1.jpg'
         },
         {
-            url: 'src/img/oficina.jpg'
+            url: 'assets/oficina.jpg'
         },
         {
-            url: 'src/img/local2.jpg'
+            url: 'assets/local2.jpg'
         }
     ]
 
@@ -48,7 +49,7 @@ export const Slider = () => {
         <div className="max-w-[1500px] h-[900px] w-full m-auto py-16 px-4 relative group mt-8 hidden md:block">
 
             <div className="flex py-10 absolute top-[55%] left-[5%] backdrop-brightness-125 drop-shadow-xl bg-white/30  rounded-full">
-                <img className="brightness-50 w-64 px-10" src="src/img/logo.png" alt="" />
+                <img className="brightness-50 w-64 px-10" src="assets/logo.png" alt="" />
             </div>
 
             <div style={{ backgroundImage: `url(${slides[currentIndex].url})` }} className="w-full h-full rounded-2xl bg-center bg-cover duration-500"></div>

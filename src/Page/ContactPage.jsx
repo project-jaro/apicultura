@@ -34,7 +34,7 @@ export const ContactPage = () => {
             <div className="md:grid grid-cols-2 container mx-auto">
 
 
-                <div className="flex justify-center text-slate-700 bg-tiber-50 rounded-lg dark:bg-yellow-400 h-[580px]">
+                <div className="flex justify-center text-slate-700 bg-slate-50 rounded-lg dark:bg-yellow-400 h-[580px]">
 
                     <div className="flex flex-col items-start justify-center gap-10">
 
@@ -42,23 +42,23 @@ export const ContactPage = () => {
 
                         <h4 className="text-md">Contáctanos por los siguientes medios</h4>
                         <span className="flex justify-center items-center gap-3 text-2xl">
-                            <FaWhatsapp size={30} />
+                            <FaWhatsapp className="text-amber-600 dark:text-pearl-950" size={30} />
                             +569 27429042
                         </span>
 
                         <span className="flex justify-center items-center gap-3 text-2xl">
-                            <MdOutlineMail size={30} />
+                            <MdOutlineMail className="text-amber-600 dark:text-pearl-950" size={30} />
                             erika@apiamigas.cl
                         </span>
 
                         <span className="flex justify-center items-center gap-3 text-2xl">
-                            <MdOutlineMail size={30} />
+                            <MdOutlineMail className="text-amber-600 dark:text-pearl-950" size={30} />
                             pilar@apiamigas.cl
                         </span>
 
                         <div className="flex flex-col gap-3">
                             <div className="flex justify-start items-center gap-3">
-                                <GoCreditCard size={30} />
+                                <GoCreditCard className="text-amber-600 dark:text-pearl-950" size={30} />
                                 <h3 className="text-2xl">Datos bancarios</h3>
                             </div>
                             <span className='text-md'>
@@ -123,7 +123,7 @@ export const ContactPage = () => {
                             <Form ref={form} className="w-full text-slate-700 p-6 on">
 
                                 <div className="flex justify-center mb-10">
-                                    <h4 className="text-gray-600 dark:text-yellow-400 text-2xl font-semibold animate-bounce animate-infinite">Envíanos un mensaje 🐝!</h4>
+                                    <h4 className="text-amber-600 dark:text-yellow-400 text-2xl font-semibold animate-bounce animate-infinite">Envíanos un mensaje 🐝!</h4>
                                 </div>
 
                                 <div className="mb-4">
@@ -165,7 +165,7 @@ export const ContactPage = () => {
                                     )} />
                                 </div>
                                 <div className="text-center">
-                                    <button type="submit" className="px-20 py-2 font-semibold bg-tiber-500 hover:bg-tiber-400 text-white dark:text-gray-600 rounded dark:bg-yellow-400 dark:hover:bg-yellow-500  focus:outline-none focus:ring-2 focus:ring-blue-300">Enviar</button>
+                                    <button type="submit" className="px-20 py-2 font-semibold bg-amber-500 hover:bg-amber-400  hover:shadow-lg hover:shadow-amber-500 text-white dark:text-gray-600 rounded dark:bg-yellow-400 dark:hover:bg-yellow-500 dark:hover:shadow-amber-100 dark:hover:text-white  focus:outline-none focus:ring-2 focus:ring-blue-300">Enviar</button>
                                 </div>
 
 

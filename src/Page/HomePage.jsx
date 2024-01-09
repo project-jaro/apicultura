@@ -6,43 +6,21 @@ import { Slider } from '../components/Slider';
 import { GiDrippingHoney, GiHoneyJar } from 'react-icons/gi';
 import { BsArrowRight } from 'react-icons/bs';
 import { Map } from '../components/Map';
+import '../styles/styles.css';
 
 
 
 export const HomePage = () => {
 
-  const { user } = useContext(UserContext);
 
-  const [filters, setFilters] = useState({
-
-    categoria: 'all',
-    minPrice: 0,
-  })
-
-  const filterProducts = (products) => {
-
-    return products.filter(product => {
-      return (
-
-        product.precio >= filters.minPrice && (
-
-          filters.categoria == 'all' ||
-          product.categoria == filters.categoria
-
-        )
-      )
-    })
-
-  }
-
-  const filteredProducts = filterProducts(productos);
+  
 
   return (
 
     <main className='dark:bg-pearl-950'>
 
       <section>
-        <div className="bg-cover h-[480px] md:h-[780px] w-full bg-center bg-[url('src/img/bee2.jpg')]">
+        <div className="bg-cover h-[480px] md:h-[780px] w-full bg-center imgBanner">
           <div className="flex flex-col h-full backdrop-brightness-50 items-center animate-fade-right justify-center">
             <div className="flex flex-col md:text-2xl">
               <h1 className="text-white font-obviously font-semibold text-3xl md:text-6xl">Bienvenidos a</h1>
@@ -64,7 +42,7 @@ export const HomePage = () => {
 
       <section className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 mx-auto  mt-10 md:mt-20">
         <div className="bg-pearl-50 dark:bg-pearl-950 text-slate-700 dark:text-meteor-400 flex flex-col flex-wrap gap-5 text-base md:text-xl px-5 md:px-20 py-10 md:py-20">
-          <h2 className="tittle-nav font-semibold text-tiber-500  text-center text-4xl dark:text-tiber-500 md:text-5xl lg:text-6xl">¿ Quienes somos ?</h2>
+          <h2 className="tittle-nav font-semibold text-amber-600  text-center text-4xl dark:text-tiber-500 md:text-5xl lg:text-6xl">¿ Quienes somos ?</h2>
           <p className="md:text-lg lg:text-xl">
             Apiamigas, es una empresa Painina, que nace de la asociación de Pilar Azócar Tudela y Erika Torres Olivos, con 13 años dedicadas a la venta de insumos y maquinaria apícola en dos empresas del rubro.
           </p>
@@ -76,9 +54,9 @@ export const HomePage = () => {
           </p>
         </div>
 
-        <div className="bg-cover brightness-125 contrast-125 bg-center bg-[url('src/img/letrero.jpg')] h-auto md:h-[auto] md:w-auto md:order-first">
+        <div className="bg-cover brightness-125 contrast-125 bg-center imgText h-auto md:h-[auto] md:w-auto md:order-first">
           <img
-            src="src/img/letrero.jpg"
+            src="/assets/letrero.jpg"
             alt="Letrero"
             className="object-cover w-full h-full md:hidden"
           />
@@ -91,6 +69,7 @@ export const HomePage = () => {
           <h1 className='text-3xl md:text-5xl font-bold'>Horario de atención</h1>
           <p className='py-2 text-base md:text-2xl'>Lunes a viernes</p>
           <p className='text-base md:text-2xl'>de 9:00 a 17:30 horas</p>
+          <p className='text-base md:text-lg text-amber-700 dark:text-yellow-500'>[ De 13:00 a 14:00 cerrado por colación ]</p>
         </div>
       </section>
 

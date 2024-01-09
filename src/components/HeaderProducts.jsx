@@ -30,7 +30,7 @@ export const HeaderProducts = ({ changeFilters }) => {
       </div>
     </form> */}
 
-      <h1 className="text-xl mt-7 md:text-2xl p-4 text-tiber-500 font-semibold dark:text-yellow-400 md:mb-0">Listado de productos</h1>
+      <h1 className="text-xl mt-7 md:text-2xl p-4 text-[#105a63] font-semibold dark:text-yellow-400 md:mb-0">Listado de productos</h1>
       <Filters onChange={changeFilters} />
     </div>
 

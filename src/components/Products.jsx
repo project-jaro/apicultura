@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { lazy, useEffect, useState } from 'react'
 import { Paginations } from './Paginations';
 import { useCategory } from '../context/CategoryContext';
+import { useLocation } from 'react-router-dom';
 
 
 export function Products({ products }) {
 
-    const [productsPerPage, setProductsPerPage] = useState(36);
+    const [productsPerPage, setProductsPerPage] = useState(24);
     const [currentPage, setCurrentPage] = useState(1);
 
     const { category } = useCategory();
@@ -22,12 +23,16 @@ export function Products({ products }) {
 
     }, [category, products]);
 
+    useEffect(() => {
 
+        window.scrollTo({ top: 0, behavior: "auto" });
+    }, [currentPage]);
 
     const formatThousandSeparator = (number) => {
 
         return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
     }
+
 
     return (
 
@@ -43,6 +48,7 @@ export function Products({ products }) {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-10">
                 {products.map(product => (
+
                     <div key={product.id} className="max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
                         {/* Componente */}
                         <div className="w-full h-auto bg-white border border-gray-200 rounded-lg shadow dark:bg-pearl-950 dark:border-gray-700">
@@ -55,16 +61,17 @@ export function Products({ products }) {
                             </div>
                             <div className="px-5 pb-5">
                                 <div>
-                                    <p className="text-md font-semibold tracking-tight sm:text-sm md:text-sm xl:text-lg text-tiber-600 dark:text-meteor-400">
+                                    <p className="text-md font-semibold tracking-tight sm:text-sm md:text-sm xl:text-lg text-meteor-600 dark:text-meteor-400">
                                         {product.nombre.charAt(0).toUpperCase() + product.nombre.slice(1)}
                                     </p>
                                 </div>
                                 {product.talla && product.talla.length > 0 && (
                                     <div className="flex items-center flex-wrap py-2">
                                         <p className="text-slate-950 text-sm dark:text-white">Talla :</p>
-                                        <ul className="grid grid-cols-4 md:grid-cols-3 xl:grid-cols-6 ml-1 gap-1 text-sm text-white">
+                                        <ul className="grid grid-cols-4 md:grid-cols-3 xl:grid-cols-6 ml-1 gap-1 text-xs text-white">
+                                            
                                             {product.talla.map(talla => (
-                                                <li key={talla} className='bg-tiber-500 p-1 flex w-7 text-center justify-center rounded-md text-xs dark:bg-tiber-700'>{talla}</li>
+                                                <li key={talla} className='bg-[#105a63] font-semibold p-1 flex w-6  text-center justify-center rounded-md text-xs dark:bg-tiber-700'>{talla}</li>
                                             ))}
                                         </ul>
                                     </div>
